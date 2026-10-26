@@ -9,7 +9,7 @@
 
   <meta
     name="description"
-    content="Tony Nguyen's IT portfolio featuring hands-on experience with Ubuntu Linux, Docker, networking, DNS, monitoring, and self-hosted infrastructure."
+    content="Tony Nguyen's IT portfolio featuring hands-on experience with Ubuntu Linux, Docker, networking, DNS, monitoring, self-hosted infrastructure, and Nexus Triad, a custom AI platform."
   >
 
   <meta name="author" content="Tony Nguyen">
@@ -18,7 +18,7 @@
   <meta property="og:title" content="Tony Nguyen | IT Infrastructure & Linux">
   <meta
     property="og:description"
-    content="Explore hands-on projects involving Linux administration, Docker, networking, DNS, and homelab infrastructure."
+    content="Explore hands-on projects involving Linux administration, Docker, networking, DNS, monitoring, self-hosted infrastructure, and AI application development."
   >
   <meta
     property="og:url"
@@ -39,108 +39,688 @@
 
   <script defer src="script.js"></script>
 </head>
+
 <body>
   <div class="noise" aria-hidden="true"></div>
+
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Tony Nguyen home"><span class="brand-mark">TN</span><span>TONY NGUYEN<span class="brand-sub">IT INFRASTRUCTURE</span></span></a>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <a class="brand" href="#top" aria-label="Tony Nguyen home">
+      <span class="brand-mark">TN</span>
+      <span>
+        TONY NGUYEN
+        <span class="brand-sub">IT INFRASTRUCTURE</span>
+      </span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+    >☰</button>
+
     <nav class="nav" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
       <a class="nav-cta" href="#contact">Contact <span>↗</span></a>
     </nav>
   </header>
 
   <main id="top">
+
+    <!-- HERO -->
     <section class="hero section-wrap">
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span> CHICAGO, IL <span class="eyebrow-divider">/</span> OPEN TO IT OPPORTUNITIES</div>
-<h1>
-  Linux systems.<br>
-  <span class="gradient-text">Reliable infrastructure.</span><br>
-  Real-world problem solving.
-</h1>
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          CHICAGO, IL
+          <span class="eyebrow-divider">/</span>
+          OPEN TO IT OPPORTUNITIES
+        </div>
 
-<p class="hero-lede">
-  I'm Tony Nguyen, a technical professional building hands-on experience
-  in Linux administration, Docker, networking, and infrastructure
-  troubleshooting. Through my homelab, I deploy and maintain self-hosted
-  services while applying the operational discipline, quality standards,
-  and problem-solving skills developed through years of manufacturing
-  experience and team leadership.
-</p>
+        <h1>
+          Linux systems.<br>
+          <span class="gradient-text">Reliable infrastructure.</span><br>
+          Real-world problem solving.
+        </h1>
+
+        <p class="hero-lede">
+          I'm Tony Nguyen, a technical professional building hands-on
+          experience in Linux administration, Docker, networking, and
+          infrastructure troubleshooting. Through my homelab, I deploy
+          and maintain self-hosted services while applying the operational
+          discipline, quality standards, and problem-solving skills
+          developed through years of manufacturing experience and
+          team leadership.
+        </p>
+
         <div class="hero-actions">
-          <a class="button button-primary" href="#projects">Explore my work <span>↓</span></a>
-          <a class="button button-secondary"
-   href="assets/Resume-Hybrid-6004.pdf"
-   download="Resume-Hybrid-6004.pdf">
-  Download Resume
-</a>
-          <a class="button button-secondary" href="mailto:amonn3120@gmail.com">Get in touch <span>↗</span></a>
+          <a class="button button-primary" href="#projects">
+            Explore my work <span>↓</span>
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="assets/Resume-Hybrid-6004.pdf"
+            download="Resume-Hybrid-6004.pdf"
+          >
+            Download Resume
+          </a>
+
+          <a class="button button-secondary" href="mailto:amonn3120@gmail.com">
+            Get in touch <span>↗</span>
+          </a>
         </div>
-        <div class="hero-meta"><span><i>01</i> Practical infrastructure</span><span><i>02</i> Methodical troubleshooting</span><span><i>03</i> Continuous improvement</span></div>
+
+        <div class="hero-meta">
+          <span><i>01</i> Practical infrastructure</span>
+          <span><i>02</i> Methodical troubleshooting</span>
+          <span><i>03</i> Continuous improvement</span>
+        </div>
       </div>
-      <div class="hero-visual reveal" aria-label="Decorative infrastructure status panel">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="core"><div class="core-inner"><span class="core-symbol">⌘</span><span class="core-label">SYSTEMS<br>ONLINE</span></div></div>
-        <div class="float-card card-linux"><span class="mini-icon">▣</span><div><small>PLATFORM</small><strong>Ubuntu Linux</strong></div><span class="card-pulse"></span></div>
-        <div class="float-card card-docker"><span class="mini-icon">◈</span><div><small>WORKLOADS</small><strong>Docker</strong></div><span class="card-pulse"></span></div>
-        <div class="float-card card-network"><span class="mini-icon">⌁</span><div><small>CONNECTIVITY</small><strong>DNS / VPN</strong></div><span class="card-pulse"></span></div>
-        <div class="visual-caption"><span>HOMELAB / 01</span><span>BUILD · MONITOR · IMPROVE</span></div>
+
+      <div
+        class="hero-visual reveal"
+        aria-label="Decorative infrastructure status panel"
+      >
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="core">
+          <div class="core-inner">
+            <span class="core-symbol">⌘</span>
+            <span class="core-label">SYSTEMS<br>ONLINE</span>
+          </div>
+        </div>
+
+        <div class="float-card card-linux">
+          <span class="mini-icon">▣</span>
+          <div>
+            <small>PLATFORM</small>
+            <strong>Ubuntu Linux</strong>
+          </div>
+          <span class="card-pulse"></span>
+        </div>
+
+        <div class="float-card card-docker">
+          <span class="mini-icon">◈</span>
+          <div>
+            <small>WORKLOADS</small>
+            <strong>Docker</strong>
+          </div>
+          <span class="card-pulse"></span>
+        </div>
+
+        <div class="float-card card-network">
+          <span class="mini-icon">⌁</span>
+          <div>
+            <small>CONNECTIVITY</small>
+            <strong>DNS / VPN</strong>
+          </div>
+          <span class="card-pulse"></span>
+        </div>
+
+        <div class="visual-caption">
+          <span>HOMELAB / 01</span>
+          <span>BUILD · MONITOR · IMPROVE</span>
+        </div>
       </div>
-      <div class="hero-bottom-line"><span>LINUX SYSTEMS</span><span>NETWORKING</span><span>CONTAINERIZATION</span><span>OBSERVABILITY</span></div>
+
+      <div class="hero-bottom-line">
+        <span>LINUX SYSTEMS</span>
+        <span>NETWORKING</span>
+        <span>CONTAINERIZATION</span>
+        <span>OBSERVABILITY</span>
+      </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about" class="section section-wrap">
-      <div class="section-heading reveal"><div class="section-index">01 / PROFILE</div><h2>Technical mindset.<br><span class="muted">Hands-on approach.</span></h2></div>
+      <div class="section-heading reveal">
+        <div class="section-index">01 / PROFILE</div>
+        <h2>
+          Technical mindset.<br>
+          <span class="muted">Hands-on approach.</span>
+        </h2>
+      </div>
+
       <div class="about-grid">
-        <div class="about-main reveal"><p class="large-copy">My path combines <strong>real-world production experience</strong> with practical IT infrastructure work.</p><p>Alongside my manufacturing career, I've built and maintained a Linux-based homelab to develop my skills in system administration, containerized services, DNS, remote access, firewalling, and monitoring. I enjoy tracing problems to their source, documenting what I learn, and making systems more dependable.</p><p>My background leading a production team also taught me how to communicate clearly, prioritize work, follow standards, and keep operations moving when issues arise.</p></div>
-        <div class="about-facts reveal"><div class="fact"><span class="fact-number">5+</span><span class="fact-label">Years in production<br>and quality operations</span></div><div class="fact"><span class="fact-number">24/7</span><span class="fact-label">Self-hosted services<br>and infrastructure practice</span></div><div class="fact"><span class="fact-number">01</span><span class="fact-label">Goal: reliable, secure<br>and maintainable systems</span></div></div>
-      </div>
-    </section>
+        <div class="about-main reveal">
+          <p class="large-copy">
+            My path combines
+            <strong>real-world production experience</strong>
+            with practical IT infrastructure work.
+          </p>
 
-    <section id="skills" class="section section-wrap section-alt">
-      <div class="section-heading reveal"><div class="section-index">02 / TOOLKIT</div><h2>Tools I use to<br><span class="muted">keep things running.</span></h2></div>
-      <div class="skills-grid">
-        <article class="skill-card reveal"><div class="skill-number">01</div><div class="skill-icon">⌘</div><h3>Linux & Systems</h3><p>Administration, service troubleshooting, permissions, storage, boot and kernel issues.</p><div class="tags"><span>Ubuntu</span><span>systemd</span><span>SSH</span><span>UFW</span></div></article>
-        <article class="skill-card reveal"><div class="skill-number">02</div><div class="skill-icon">▦</div><h3>Containers & Services</h3><p>Deploying and maintaining self-hosted applications with container-based workflows.</p><div class="tags"><span>Docker</span><span>Portainer</span><span>Reverse proxy</span><span>NPM</span></div></article>
-        <article class="skill-card reveal"><div class="skill-number">03</div><div class="skill-icon">⌁</div><h3>Networking & DNS</h3><p>Local name resolution, secure remote access, subnet routing, firewall rules and connectivity troubleshooting.</p><div class="tags"><span>TCP/IP</span><span>DHCP</span><span>Pi-hole</span><span>Unbound</span><span>Tailscale</span></div></article>
-        <article class="skill-card reveal"><div class="skill-number">04</div><div class="skill-icon">◉</div><h3>Monitoring & Operations</h3><p>Service availability, host visibility, dashboarding and continuous improvement.</p><div class="tags"><span>Uptime Kuma</span><span>Glances</span><span>Homepage</span><span>Git basics</span></div></article>
-      </div>
-      <p class="skills-note"><span>IN PROGRESS</span> Proxmox VE, NAS architecture, managed switching, VLAN planning and rack-based infrastructure.</p>
-    </section>
+          <p>
+            Alongside my manufacturing career, I've built and maintained
+            a Linux-based homelab to develop my skills in system
+            administration, containerized services, DNS, remote access,
+            firewalling, and monitoring. I enjoy tracing problems to
+            their source, documenting what I learn, and making systems
+            more dependable.
+          </p>
 
-    <section id="projects" class="section section-wrap">
-      <div class="section-heading reveal"><div class="section-index">03 / SELECTED WORK</div><h2>Built, configured,<br><span class="muted">and troubleshot.</span></h2><p class="heading-note">Personal projects from my homelab. Each reflects practical learning in deployment, security, and reliability.</p></div>
-      <div class="project-list">
-        <article class="project-card project-feature reveal"><div class="project-topline"><span class="project-id">PROJECT / 001</span><span class="project-type">INFRASTRUCTURE</span></div><div class="project-content"><div><h3>Self-hosted Linux<br>infrastructure lab</h3><p>A repurposed Ubuntu server running a collection of services managed with Docker and Portainer. Built to practice deployment, maintenance, access control, and fault isolation across a real home network.</p><div class="tags"><span>Ubuntu</span><span>Docker</span><span>Portainer</span><span>Nginx Proxy Manager</span></div></div><div class="project-detail"><span class="detail-label">FOCUS AREAS</span><ul><li>Service deployment and lifecycle</li><li>Container networking and connectivity</li><li>Reverse proxy and internal access</li><li>Linux service and storage troubleshooting</li></ul></div></div><div class="project-footer"><span>01 — CORE PLATFORM</span><span class="project-arrow">↗</span></div></article>
-        <article class="project-card reveal"><div class="project-topline"><span class="project-id">PROJECT / 002</span><span class="project-type">NETWORKING</span></div><div class="project-content"><div><h3>Redundant DNS<br>& network access</h3><p>Configured two Pi-hole DNS servers with Unbound, plus Tailscale for secure remote access, subnet routing, and internal name resolution.</p><div class="tags"><span>Pi-hole</span><span>Unbound</span><span>Tailscale</span><span>UFW</span></div></div><div class="project-detail"><span class="detail-label">FOCUS AREAS</span><ul><li>DNS filtering and recursive resolution</li><li>Redundancy across DNS endpoints</li><li>Firewall rules by network interface</li><li>VPN and subnet routing troubleshooting</li></ul></div></div><div class="project-footer"><span>02 — CONNECTIVITY</span><span class="project-arrow">↗</span></div></article>
-        <article class="project-card reveal"><div class="project-topline"><span class="project-id">PROJECT / 003</span><span class="project-type">OBSERVABILITY</span></div><div class="project-content"><div><h3>Service monitoring<br>& operations dashboard</h3><p>Deployed monitoring and dashboard tools to make service health, host resources, and commonly used homelab applications easier to inspect.</p><div class="tags"><span>Uptime Kuma</span><span>Glances</span><span>Homepage</span></div></div><div class="project-detail"><span class="detail-label">FOCUS AREAS</span><ul><li>Availability monitoring</li><li>Host resource visibility</li><li>Centralized service links</li><li>Investigating false offline alerts</li></ul></div></div><div class="project-footer"><span>03 — VISIBILITY</span><span class="project-arrow">↗</span></div></article>
-        <article class="project-card reveal"><div class="project-topline"><span class="project-id">PROJECT / 004</span><span class="project-type">SELF-HOSTED APPLICATIONS</span></div><div class="project-content"><div><h3>Personal media<br>& home services</h3><p>Maintained services including Immich, Navidrome, Home Assistant, and Ollama, learning how storage, application configuration, networking, and resource limits interact.</p><div class="tags"><span>Immich</span><span>Navidrome</span><span>Home Assistant</span><span>Ollama</span></div></div><div class="project-detail"><span class="detail-label">FOCUS AREAS</span><ul><li>Application deployment and updates</li><li>Persistent data and storage paths</li><li>Local service access</li><li>Hardware-aware service planning</li></ul></div></div><div class="project-footer"><span>04 — APPLICATIONS</span><span class="project-arrow">↗</span></div></article>
-      </div>
-      <div class="project-disclaimer reveal"><span class="disclaimer-mark">i</span><p>These are personal lab projects, not commercial client deployments. The descriptions focus on the configurations and troubleshooting work I have performed, without implying certifications or professional IT employment I have not claimed.</p></div>
-    </section>
+          <p>
+            My background leading a production team also taught me how
+            to communicate clearly, prioritize work, follow standards,
+            and keep operations moving when issues arise.
+          </p>
+        </div>
 
-    <section id="experience" class="section section-wrap section-alt">
-      <div class="section-heading reveal"><div class="section-index">04 / EXPERIENCE</div><h2>Operations, quality<br><span class="muted">and team leadership.</span></h2></div>
-      <div class="experience-grid">
-        <div class="experience-intro reveal"><span class="timeline-label">PROFESSIONAL HISTORY</span><p>Production environments demand consistency, clear communication, and fast, careful problem-solving. I bring those habits into technical work.</p><div class="experience-highlight"><span class="highlight-num">10</span><span>employees led as<br>Production Team Leader</span></div></div>
-        <div class="timeline reveal">
-          <article class="timeline-item"><div class="timeline-date">MAR 2026 — PRESENT</div><div><h3>Production Tester</h3><div class="company">HydraForce · Lincolnshire, IL</div><p>Support production runs, troubleshoot workflow issues, recommend process improvements, and enforce product quality requirements.</p></div></article>
-          <article class="timeline-item"><div class="timeline-date">MAR 2025 — FEB 2026</div><div><h3>Production Setter</h3><div class="company">HydraForce · Lincolnshire, IL</div><p>Maintained production-line supply, managed consumables and inventory, and supported clean, organized, quality-focused workstations.</p></div></article>
-          <article class="timeline-item"><div class="timeline-date">MAR 2023 — OCT 2024</div><div><h3>Production Team Leader</h3><div class="company">HydraForce · Lincolnshire, IL</div><p>Led a team of 10, coordinated daily work, trained employees, resolved conflicts, and supported safety, quality, and equipment audits.</p></div></article>
-          <article class="timeline-item"><div class="timeline-date">JAN 2022 — FEB 2023</div><div><h3>Production Tester</h3><div class="company">HydraForce · Lincolnshire, IL</div><p>Tested components and assemblies, documented results, and contributed to continuous-improvement initiatives.</p></div></article>
-          <article class="timeline-item"><div class="timeline-date">JUN 2021 — NOV 2021</div><div><h3>Assembly Line Production Worker</h3><div class="company">HydraForce · Vernon Hills, IL</div><p>Operated production equipment, inspected finished products, handled materials, and followed safety procedures.</p></div></article>
+        <div class="about-facts reveal">
+          <div class="fact">
+            <span class="fact-number">5+</span>
+            <span class="fact-label">
+              Years in production<br>and quality operations
+            </span>
+          </div>
+
+          <div class="fact">
+            <span class="fact-number">24/7</span>
+            <span class="fact-label">
+              Self-hosted services<br>and infrastructure practice
+            </span>
+          </div>
+
+          <div class="fact">
+            <span class="fact-number">01</span>
+            <span class="fact-label">
+              Goal: reliable, secure<br>and maintainable systems
+            </span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="education section-wrap reveal"><div class="education-label">EDUCATION</div><div><h3>High School Diploma</h3><p>Mather High School · Chicago, IL · June 2018</p></div><div class="education-extra"><span>LANGUAGES</span><strong>English · Vietnamese (bilingual)</strong></div></section>
+    <!-- SKILLS -->
+    <section id="skills" class="section section-wrap section-alt">
+      <div class="section-heading reveal">
+        <div class="section-index">02 / TOOLKIT</div>
+        <h2>
+          Tools I use to<br>
+          <span class="muted">keep things running.</span>
+        </h2>
+      </div>
 
-    <section id="contact" class="contact-section section-wrap">
-      <div class="contact-panel reveal"><div class="section-index">05 / CONTACT</div><h2>Let's connect<br><span class="gradient-text">and solve something.</span></h2><p>I'm interested in opportunities where I can contribute my troubleshooting mindset, operational discipline, and growing infrastructure skills.</p><a class="button button-primary" href="mailto:amonn3120@gmail.com">Email Tony <span>↗</span></a><div class="contact-foot"><span>CHICAGO, ILLINOIS</span><span>IT INFRASTRUCTURE · LINUX · NETWORKING</span></div></div>
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <div class="skill-number">01</div>
+          <div class="skill-icon">⌘</div>
+          <h3>Linux & Systems</h3>
+          <p>
+            Administration, service troubleshooting, permissions,
+            storage, boot and kernel issues.
+          </p>
+          <div class="tags">
+            <span>Ubuntu</span>
+            <span>systemd</span>
+            <span>SSH</span>
+            <span>UFW</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-number">02</div>
+          <div class="skill-icon">▦</div>
+          <h3>Containers & Services</h3>
+          <p>
+            Deploying and maintaining self-hosted applications
+            with container-based workflows.
+          </p>
+          <div class="tags">
+            <span>Docker</span>
+            <span>Portainer</span>
+            <span>Reverse proxy</span>
+            <span>NPM</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-number">03</div>
+          <div class="skill-icon">⌁</div>
+          <h3>Networking & DNS</h3>
+          <p>
+            Local name resolution, secure remote access, subnet routing,
+            firewall rules and connectivity troubleshooting.
+          </p>
+          <div class="tags">
+            <span>TCP/IP</span>
+            <span>DHCP</span>
+            <span>Pi-hole</span>
+            <span>Unbound</span>
+            <span>Tailscale</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-number">04</div>
+          <div class="skill-icon">◉</div>
+          <h3>Monitoring & Operations</h3>
+          <p>
+            Service availability, host visibility, dashboarding
+            and continuous improvement.
+          </p>
+          <div class="tags">
+            <span>Uptime Kuma</span>
+            <span>Glances</span>
+            <span>Homepage</span>
+            <span>Git basics</span>
+          </div>
+        </article>
+      </div>
+
+      <p class="skills-note">
+        <span>IN PROGRESS</span>
+        Proxmox VE, NAS architecture, managed switching,
+        VLAN planning and rack-based infrastructure.
+      </p>
     </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-wrap">
+      <div class="section-heading reveal">
+        <div class="section-index">03 / SELECTED WORK</div>
+        <h2>
+          Built, configured,<br>
+          <span class="muted">and troubleshot.</span>
+        </h2>
+        <p class="heading-note">
+          Personal projects from my homelab. Each reflects practical
+          learning in deployment, security, reliability, and
+          application development.
+        </p>
+      </div>
+
+      <div class="project-list">
+
+        <!-- PROJECT 001 -->
+        <article class="project-card project-feature reveal">
+          <div class="project-topline">
+            <span class="project-id">PROJECT / 001</span>
+            <span class="project-type">INFRASTRUCTURE</span>
+          </div>
+
+          <div class="project-content">
+            <div>
+              <h3>Self-hosted Linux<br>infrastructure lab</h3>
+
+              <p>
+                A repurposed Ubuntu server running a collection of
+                services managed with Docker and Portainer. Built to
+                practice deployment, maintenance, access control, and
+                fault isolation across a real home network.
+              </p>
+
+              <div class="tags">
+                <span>Ubuntu</span>
+                <span>Docker</span>
+                <span>Portainer</span>
+                <span>Nginx Proxy Manager</span>
+              </div>
+            </div>
+
+            <div class="project-detail">
+              <span class="detail-label">FOCUS AREAS</span>
+              <ul>
+                <li>Service deployment and lifecycle</li>
+                <li>Container networking and connectivity</li>
+                <li>Reverse proxy and internal access</li>
+                <li>Linux service and storage troubleshooting</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span>01 — CORE PLATFORM</span>
+            <span class="project-arrow">↗</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 002 -->
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-id">PROJECT / 002</span>
+            <span class="project-type">NETWORKING</span>
+          </div>
+
+          <div class="project-content">
+            <div>
+              <h3>Redundant DNS<br>& network access</h3>
+
+              <p>
+                Configured two Pi-hole DNS servers with Unbound,
+                plus Tailscale for secure remote access, subnet
+                routing, and internal name resolution.
+              </p>
+
+              <div class="tags">
+                <span>Pi-hole</span>
+                <span>Unbound</span>
+                <span>Tailscale</span>
+                <span>UFW</span>
+              </div>
+            </div>
+
+            <div class="project-detail">
+              <span class="detail-label">FOCUS AREAS</span>
+              <ul>
+                <li>DNS filtering and recursive resolution</li>
+                <li>Redundancy across DNS endpoints</li>
+                <li>Firewall rules by network interface</li>
+                <li>VPN and subnet routing troubleshooting</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span>02 — CONNECTIVITY</span>
+            <span class="project-arrow">↗</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 003 -->
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-id">PROJECT / 003</span>
+            <span class="project-type">OBSERVABILITY</span>
+          </div>
+
+          <div class="project-content">
+            <div>
+              <h3>Service monitoring<br>& operations dashboard</h3>
+
+              <p>
+                Deployed monitoring and dashboard tools to make
+                service health, host resources, and commonly used
+                homelab applications easier to inspect.
+              </p>
+
+              <div class="tags">
+                <span>Uptime Kuma</span>
+                <span>Glances</span>
+                <span>Homepage</span>
+              </div>
+            </div>
+
+            <div class="project-detail">
+              <span class="detail-label">FOCUS AREAS</span>
+              <ul>
+                <li>Availability monitoring</li>
+                <li>Host resource visibility</li>
+                <li>Centralized service links</li>
+                <li>Investigating false offline alerts</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span>03 — VISIBILITY</span>
+            <span class="project-arrow">↗</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 004 -->
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-id">PROJECT / 004</span>
+            <span class="project-type">SELF-HOSTED APPLICATIONS</span>
+          </div>
+
+          <div class="project-content">
+            <div>
+              <h3>Personal media<br>& home services</h3>
+
+              <p>
+                Maintained services including Immich, Navidrome,
+                Home Assistant, and Ollama, learning how storage,
+                application configuration, networking, and resource
+                limits interact.
+              </p>
+
+              <div class="tags">
+                <span>Immich</span>
+                <span>Navidrome</span>
+                <span>Home Assistant</span>
+                <span>Ollama</span>
+              </div>
+            </div>
+
+            <div class="project-detail">
+              <span class="detail-label">FOCUS AREAS</span>
+              <ul>
+                <li>Application deployment and updates</li>
+                <li>Persistent data and storage paths</li>
+                <li>Local service access</li>
+                <li>Hardware-aware service planning</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span>04 — APPLICATIONS</span>
+            <span class="project-arrow">↗</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 005: NEXUS TRIAD -->
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-id">PROJECT / 005</span>
+            <span class="project-type">AI APPLICATION DEVELOPMENT</span>
+          </div>
+
+          <div class="project-content">
+            <div>
+              <h3>Nexus Triad<br>AI workspace</h3>
+
+              <p>
+                Developed a custom, self-hosted AI workspace with
+                a web interface and FastAPI backend. Integrated
+                multiple AI providers alongside local model access
+                through Ollama, bringing AI interactions into a
+                centralized application hosted on my homelab.
+              </p>
+
+              <div class="tags">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>Docker</span>
+                <span>Ollama</span>
+                <span>REST APIs</span>
+                <span>HTML/CSS/JavaScript</span>
+              </div>
+            </div>
+
+            <div class="project-detail">
+              <span class="detail-label">FOCUS AREAS</span>
+              <ul>
+                <li>Custom web application and backend development</li>
+                <li>Integration of multiple AI providers</li>
+                <li>Local LLM connectivity and model configuration</li>
+                <li>Containerized deployment and service routing</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <span>05 — APPLICATION DEVELOPMENT</span>
+            <span class="project-arrow">↗</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="project-disclaimer reveal">
+        <span class="disclaimer-mark">i</span>
+        <p>
+          These are personal lab projects, not commercial client
+          deployments. The descriptions focus on the configurations
+          and troubleshooting work I have performed, without implying
+          certifications or professional IT employment I have not claimed.
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section-wrap section-alt">
+      <div class="section-heading reveal">
+        <div class="section-index">04 / EXPERIENCE</div>
+        <h2>
+          Operations, quality<br>
+          <span class="muted">and team leadership.</span>
+        </h2>
+      </div>
+
+      <div class="experience-grid">
+        <div class="experience-intro reveal">
+          <span class="timeline-label">PROFESSIONAL HISTORY</span>
+
+          <p>
+            Production environments demand consistency, clear
+            communication, and fast, careful problem-solving.
+            I bring those habits into technical work.
+          </p>
+
+          <div class="experience-highlight">
+            <span class="highlight-num">10</span>
+            <span>
+              employees led as<br>
+              Production Team Leader
+            </span>
+          </div>
+        </div>
+
+        <div class="timeline reveal">
+          <article class="timeline-item">
+            <div class="timeline-date">MAR 2026 — PRESENT</div>
+            <div>
+              <h3>Production Tester</h3>
+              <div class="company">HydraForce · Lincolnshire, IL</div>
+              <p>
+                Support production runs, troubleshoot workflow issues,
+                recommend process improvements, and enforce product
+                quality requirements.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">MAR 2025 — FEB 2026</div>
+            <div>
+              <h3>Production Setter</h3>
+              <div class="company">HydraForce · Lincolnshire, IL</div>
+              <p>
+                Maintained production-line supply, managed consumables
+                and inventory, and supported clean, organized,
+                quality-focused workstations.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">MAR 2023 — OCT 2024</div>
+            <div>
+              <h3>Production Team Leader</h3>
+              <div class="company">HydraForce · Lincolnshire, IL</div>
+              <p>
+                Led a team of 10, coordinated daily work, trained
+                employees, resolved conflicts, and supported safety,
+                quality, and equipment audits.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">JAN 2022 — FEB 2023</div>
+            <div>
+              <h3>Production Tester</h3>
+              <div class="company">HydraForce · Lincolnshire, IL</div>
+              <p>
+                Tested components and assemblies, documented results,
+                and contributed to continuous-improvement initiatives.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">JUN 2021 — NOV 2021</div>
+            <div>
+              <h3>Assembly Line Production Worker</h3>
+              <div class="company">HydraForce · Vernon Hills, IL</div>
+              <p>
+                Operated production equipment, inspected finished
+                products, handled materials, and followed
+                safety procedures.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="education section-wrap reveal">
+      <div class="education-label">EDUCATION</div>
+
+      <div>
+        <h3>High School Diploma</h3>
+        <p>Mather High School · Chicago, IL · June 2018</p>
+      </div>
+
+      <div class="education-extra">
+        <span>LANGUAGES</span>
+        <strong>English · Vietnamese (bilingual)</strong>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section section-wrap">
+      <div class="contact-panel reveal">
+        <div class="section-index">05 / CONTACT</div>
+
+        <h2>
+          Let's connect<br>
+          <span class="gradient-text">and solve something.</span>
+        </h2>
+
+        <p>
+          I'm interested in opportunities where I can contribute
+          my troubleshooting mindset, operational discipline,
+          and growing infrastructure skills.
+        </p>
+
+        <a class="button button-primary" href="mailto:amonn3120@gmail.com">
+          Email Tony <span>↗</span>
+        </a>
+
+        <div class="contact-foot">
+          <span>CHICAGO, ILLINOIS</span>
+          <span>IT INFRASTRUCTURE · LINUX · NETWORKING</span>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="site-footer section-wrap"><a class="brand footer-brand" href="#top"><span class="brand-mark">TN</span><span>TONY NGUYEN<span class="brand-sub">IT INFRASTRUCTURE</span></span></a><span>Designed to document the work. Built to keep improving.</span><a href="#top" class="back-top">BACK TO TOP ↑</a><span class="copyright">© <span id="year"></span> Tony Nguyen</span></footer>
+  <!-- FOOTER -->
+  <footer class="site-footer section-wrap">
+    <a class="brand footer-brand" href="#top">
+      <span class="brand-mark">TN</span>
+      <span>
+        TONY NGUYEN
+        <span class="brand-sub">IT INFRASTRUCTURE</span>
+      </span>
+    </a>
+
+    <span>Designed to document the work. Built to keep improving.</span>
+
+    <a href="#top" class="back-top">BACK TO TOP ↑</a>
+
+    <span class="copyright">
+      © <span id="year"></span> Tony Nguyen
+    </span>
+  </footer>
 </body>
 </html>
